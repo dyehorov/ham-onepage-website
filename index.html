@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <title>theHam</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_logo_background">
+            <div class="container">
+                <div class="header_logo">
+                    <div class="logo">
+                        <div class="logo_label">
+                            <a href="#" class="logo_link">
+                                <svg width="58" height="67" viewBox="0 0 58 67" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="58" height="67" fill="url(#pattern0)" />
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_2143_414" transform="scale(0.0172414 0.0149254)" />
+                                        </pattern>
+                                        <image id="image0_2143_414" width="58" height="67"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAABDCAYAAADNlhYhAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+nhxg7wAAAxpJREFUaIHt20FoHVUUxvGfExEKgYAgBAoupMGQoLRQLC6KpUX3EUVBBKVCsSgVs6m0S6VuKi2KghgUF6JE2o0rRTEggtKSUqkIDS0UAoVCoFAoBAIuTh6UR/o6M+/OTN6b998lb96957v3nHO/OyQPTS4vqpHDOI5PsID1uibOappnN/7CV9iFz3EFczXNX7nQCXyKC3im67NdOIffxUJUSpVC38BVvIOxHs89h2Wx25NVBVOF0KfwJ77GYwW+d1gszAnsSB1USqETOCN259mSY4zjQ/wnhCcjldDXRXDH9E7TvDwuUnlZpHbf9Ct0RjSTb1VTX7s3xz8nmldpygodx2lclmjFH8CcOI5OixIpTBmhr4g0fV+aNM3LI5tzXsPbmz/npojQGfyK77GzyCSJeVQJw5FH6DhOicZwsFRo1VDIcDxI6Eti5Y4rmCo1kstw3E/ok/gZi6LVDwI9DUe30B3iwL6M5ysPLT0dw3FVl+G4V+ic6KYnbN80zctOXYYjE0X9kyjsQUnTvHQMx7GHRZomN9HbjMnM8ItEpO6dpoOogwwbTQdRA+N1vTNqmrG2CJXhdtNB1EFbdnRUo0PHqEaHjIm2CG3Njo5qdNhoV4224fbSrvtoGxjV6NDRlhptze2lNffRUY0OG6MaHToyNf6FZZNkuNt0EDUwqtFhYz3DzaajqJhfMJvhLA7gUqPhpOcGXsYLWOmk7hL24C2Dv8Pr+Biz+LHzy+4aXcAUPjKY3fg3sWEf6HJ8WzWjOziJaSF8EFjFqziEf7d6oFfXvSFSeY9I7e3IhvjXkmn80OvBPMfLJdGsXsRKv5ElZAlPY16Oi0mRc/S8KPB5zb7dv4nXxOJvmaZbUdQwrItUeQJfqNcnb4ijcBrfFf1yWWe0hqNih8+XHKMIf4he8Z6S2dSvBVwRtXtANYbjFt7EfvzTz0CpvG5qw7GBz8SZ/k2C8ZK/qU9hOP7GXrwrYdOr4vbSMRxTihmONZER+1RQBlVe01blNxxfik5emROr4z7ay3BcFGl6RMVnc50X73sNx3Uhbq8QWzn/A5kFk+cEK0EoAAAAAElFTkSuQmCC" />
+                                    </defs>
+                                    <foreignObject x="15" y="15" width="190" height="90">
+                                        <div xmlns="http://www.w3.org/1999/xhtml" style="width:31px; height:31px;"><b
+                                                class="logo_label_letter">H</b>
+                                        </div>
+                                    </foreignObject>
+                                </svg>
+                        </div>
+                        <div class="logo_text">
+                            <p class="logo_text_white">the<span class="logo_text_color">Ham</span></p>
+                        </div></a>
+                    </div>
+                    <div class="header_nav">
+                        <ul class="header_nav_list">
+                            <li class="header_nav_list_item">home</li>
+                            <li class="header_nav_list_item">about</li>
+                            <li class="header_nav_list_item">blog</li>
+                            <li class="header_nav_list_item">skills</li>
+                            <li class="header_nav_list_item">service</li>
+                            <li class="header_nav_list_item">work</li>
+                            <li class="header_nav_list_item">testimonial</li>
+                        </ul>
+                        <img class="search_icon" src="./assets/images/Search icon 1.png" alt="Search icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_main_part">
+            <h1 class="header_heading first_heading">the ham is <span class="header_heading_colored">Wordpress
+                    theme</span></h1>
+            <h2 class="header_heading second_heading">we are creative</h2>
+            <p class="header_slogan">just buy and enjoy these awesome features</p>
+            <button class="explore header_btn">explore now</button>
+            <button class="purchase header_btn">purchase now</button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="features">
+            <div class="features_box dark_box"><img class="click" src="./assets/images/2sectionSVG/click.svg">
+                <p class="features_box_text colored_text">Different theme option</p>
+            </div>
+            <div class="features_box light_box"><img class="diamond" src="./assets/images/2sectionSVG/diamond.svg">
+                <p class="features_box_text">fully customizable</p>
+            </div>
+            <div class="features_box dark_box"><img class="lamp" src="./assets/images/2sectionSVG/lamp.svg">
+                <p class="features_box_text colored_text">unlimited support</p>
+            </div>
+            <div class="features_box light_box"><img class="devices" src="./assets/images/2sectionSVG/collection.svg">
+                <p class="features_box_text">responsive all device</p>
+            </div>
+        </section>
+        <section class="our_services">
+            <div class="container">
+                <p class="our_services_title">our services</p>
+                <div class="our_services_menu">
+                    <div class="dash up_dash"></div>
+                    <div class="dash down_dash"></div>
+                    <ul class="our_services_menu_list">
+                        <li class="our_services_menu_items our_services_active" id="webDesign">web design</li>
+                        <li class="our_services_menu_items" id="graphicDesign">graphic design</li>
+                        <li class="our_services_menu_items" id="online">online support</li>
+                        <li class="our_services_menu_items" id="app">app design</li>
+                        <li class="our_services_menu_items" id="onlineMarketing">online marketing</li>
+                        <li class="our_services_menu_items" id="seo">seo service</li>
+                    </ul>
+
+                    <div class="our_services_image_paragraph">
+                        <div data-filter="webDesign" class="our_services_image_paragraph_blocks active_image_paragraph">
+                            <img src="./assets/images/ourservices.jpg" class="our_services_image" alt="">
+                            <p class="our_services_paragraph_text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt
+                                mollit anim id est laborum.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt
+                                ut labore et dolore magna
+                                aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt
+                                mollit anim id est laborum.
+                                Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip
+                                isicing
+                                elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non
+                                proident,
+                                sunt in culpa qui officia
+                                deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div data-filter="graphicDesign" class="our_services_image_paragraph_blocks">
+                            <img src="./assets/images/amazingwork/1.jpg" class="our_services_image" alt="">
+                            <p class="our_services_paragraph_text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt
+                                mollit anim id est laborum.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt
+                                ut labore et dolore magna
+                                aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt
+                                mollit anim id est laborum.
+                                Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip
+                                isicing
+                                elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor
+                                incididunt
+                            </p>
+                        </div>
+                        <div data-filter="online" class="our_services_image_paragraph_blocks">
+                            <img src="./assets/images/breakingnews/1.jpg" class="our_services_image" alt="">
+                            <p class="our_services_paragraph_text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt
+                                mollit anim id est laborum.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt
+                                ut labore et dolore magna
+                                aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt
+                                mollit anim id est laborum.
+                                Deserunt mollit anim id est Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa qui officia
+                                deserunt Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt consectetur Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia
+                                deserunt</p>
+                        </div>
+                        <div data-filter="app" class="our_services_image_paragraph_blocks">
+                            <img src="./assets/images/landing page/landing-page2.jpg" class="our_services_image" alt="">
+                            <p class="our_services_paragraph_text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt
+                                mollit anim id est laborum.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt
+                                ut labore et dolore magna
+                                aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt
+                                mollit anim id est laborum.
+                                Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip
+                                isicing
+                                elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non
+                                proident,
+                            </p>
+                        </div>
+                        <div data-filter="onlineMarketing" class="our_services_image_paragraph_blocks">
+                            <img src="./assets/images/amazingwork/4.jpg" class="our_services_image" alt="">
+                            <p class="our_services_paragraph_text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt
+                                mollit anim id est laborum.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt
+                                ut labore et dolore magna
+                                aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt
+                                mollit anim id est laborum.
+                                Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip
+                                isicing
+                                elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. ut labore et dolore magna
+                                aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt </p>
+                        </div>
+                        <div data-filter="seo" class="our_services_image_paragraph_blocks">
+                            <img src="./assets/images/breakingnews/5.jpg" class="our_services_image" alt="">
+                            <p class="our_services_paragraph_text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt
+                                mollit anim id est laborum.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt
+                                ut labore et dolore magna
+                                aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt
+                                mollit anim id est laborum.
+                                Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip
+                                isicing
+                                elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non
+                                Excepteur sint occaecat cupidatat non
+                                .</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="everything_is_ready">
+            <p class="everything_slogan">Everything is ready. just buy and install now</p>
+            <p class="everything_description">Smooth reliable, responsive ready, perfect portfolio, unique blog layout
+                and many many options for you</p>
+            <button class="everything_btn">purchase now</button>
+        </section>
+        <section class="our_amazing_work">
+            <div class="container">
+                <p class="our_amazing_title">our amazing work</p>
+                <div class="dash up_dash"></div>
+                <div class="dash down_dash"></div>
+                <ul class="our_amazing_list">
+                    <li class="our_amazing_items active_btn" id="all">all</li>
+                    <li class="our_amazing_items" id="graphic">graphic design</li>
+                    <li class="our_amazing_items" id="web">web design</li>
+                    <li class="our_amazing_items" id="landing">landing pages</li>
+                    <li class="our_amazing_items" id="word">word press</li>
+                </ul>
+                <div class="our_amazing_images">
+                    <div class="creative_design">
+                        <div class="creative_design_logo_titles">
+                            <img src="./assets/images/amazingwork/coloredchain.svg" class="creative_design_logo" alt="">
+                            <p class="creative_design_text">creative design</p>
+                            <p class="creative_design_web_text">web design</p>
+                        </div>
+                    </div>
+                    <img src="./assets/images/amazingwork/1.jpg" class="images_amazing" data-filter="all" alt="">
+                    <img src="./assets/images/amazingwork/2.jpg" class="images_amazing" data-filter="all" alt="">
+                    <img src="./assets/images/amazingwork/3.jpg" class="images_amazing" data-filter="all" alt="">
+                    <img src="./assets/images/amazingwork/4.jpg" class="images_amazing" data-filter="all" alt="">
+                    <img src="./assets/images/amazingwork/5.jpg" class="images_amazing" data-filter="all" alt="">
+                    <img src="./assets/images/amazingwork/6.jpg" class="images_amazing" data-filter="all" alt="">
+                    <img src="./assets/images/amazingwork/7.jpg" class="images_amazing" data-filter="all" alt="">
+                    <img src="./assets/images/amazingwork/8.jpg" class="images_amazing" data-filter="all" alt="">
+                    <img src="./assets/images/amazingwork/9.jpg" class="images_amazing" data-filter="all" alt="">
+                    <img src="./assets/images/amazingwork/10.jpg" class="images_amazing" data-filter="all" alt="">
+                    <img src="./assets/images/amazingwork/11.jpg" class="images_amazing" data-filter="all" alt="">
+                    <img src="./assets/images/graphic design/graphic-design1.jpg" class="images_amazing" alt=""
+                        data-filter="graphic" hidden>
+                    <img src="./assets/images/graphic design/graphic-design2.jpg" class="images_amazing" alt=""
+                        data-filter="graphic" hidden>
+                    <img src="./assets/images/graphic design/graphic-design3.jpg" class="images_amazing" alt=""
+                        data-filter="graphic" hidden>
+                    <img src="./assets/images/graphic design/graphic-design4.jpg" class="images_amazing" alt=""
+                        data-filter="graphic" hidden>
+                    <img src="./assets/images/graphic design/graphic-design5.jpg" class="images_amazing" alt=""
+                        data-filter="graphic" hidden>
+                    <img src="./assets/images/graphic design/graphic-design6.jpg" class="images_amazing" alt=""
+                        data-filter="graphic" hidden>
+                    <img src="./assets/images/graphic design/graphic-design7.jpg" class="images_amazing" alt=""
+                        data-filter="graphic" hidden>
+                    <img src="./assets/images/graphic design/graphic-design8.jpg" class="images_amazing" alt=""
+                        data-filter="graphic" hidden>
+                    <img src="./assets/images/graphic design/graphic-design9.jpg" class="images_amazing" alt=""
+                        data-filter="graphic" hidden>
+                    <img src="./assets/images/graphic design/graphic-design10.jpg" class="images_amazing" alt=""
+                        data-filter="graphic" hidden>
+                    <img src="./assets/images/graphic design/graphic-design11.jpg" class="images_amazing" alt=""
+                        data-filter="graphic" hidden>
+                    <img src="./assets/images/graphic design/graphic-design12.jpg" class="images_amazing" alt=""
+                        data-filter="graphic" hidden>
+                    <img src="./assets/images/web design/web-design1.jpg" alt="" class="images_amazing"
+                        data-filter="web" hidden>
+                    <img src="./assets/images/web design/web-design2.jpg" alt="" class="images_amazing"
+                        data-filter="web" hidden>
+                    <img src="./assets/images/web design/web-design3.jpg" alt="" class="images_amazing"
+                        data-filter="web" hidden>
+                    <img src="./assets/images/web design/web-design4.jpg" alt="" class="images_amazing"
+                        data-filter="web" hidden>
+                    <img src="./assets/images/web design/web-design5.jpg" alt="" class="images_amazing"
+                        data-filter="web" hidden>
+                    <img src="./assets/images/web design/web-design6.jpg" alt="" class="images_amazing"
+                        data-filter="web" hidden>
+                    <img src="./assets/images/web design/web-design7.jpg" alt="" class="images_amazing"
+                        data-filter="web" hidden>
+                    <img src="./assets/images/landing page/landing-page1.jpg" alt="" class="images_amazing"
+                        data-filter="landing" hidden>
+                    <img src="./assets/images/landing page/landing-page2.jpg" alt="" class="images_amazing"
+                        data-filter="landing" hidden>
+                    <img src="./assets/images/landing page/landing-page3.jpg" alt="" class="images_amazing"
+                        data-filter="landing" hidden>
+                    <img src="./assets/images/landing page/landing-page4.jpg" alt="" class="images_amazing"
+                        data-filter="landing" hidden>
+                    <img src="./assets/images/landing page/landing-page5.jpg" alt="" class="images_amazing"
+                        data-filter="landing" hidden>
+                    <img src="./assets/images/landing page/landing-page6.jpg" alt="" class="images_amazing"
+                        data-filter="landing" hidden>
+                    <img src="./assets/images/landing page/landing-page7.jpg" alt="" class="images_amazing"
+                        data-filter="landing" hidden>
+                    <img src="./assets/images/wordpress/wordpress1.jpg" alt="" class="images_amazing" data-filter="word"
+                        hidden>
+                    <img src="./assets/images/wordpress/wordpress2.jpg" alt="" class="images_amazing" data-filter="word"
+                        hidden>
+                    <img src="./assets/images/wordpress/wordpress3.jpg" alt="" class="images_amazing" data-filter="word"
+                        hidden>
+                    <img src="./assets/images/wordpress/wordpress4.jpg" alt="" class="images_amazing" data-filter="word"
+                        hidden>
+                    <img src="./assets/images/wordpress/wordpress5.jpg" alt="" class="images_amazing" data-filter="word"
+                        hidden>
+                    <img src="./assets/images/wordpress/wordpress6.jpg" alt="" class="images_amazing" data-filter="word"
+                        hidden>
+                    <img src="./assets/images/wordpress/wordpress7.jpg" alt="" class="images_amazing" data-filter="word"
+                        hidden>
+                    <img src="./assets/images/wordpress/wordpress8.jpg" alt="" class="images_amazing" data-filter="word"
+                        hidden>
+                    <img src="./assets/images/wordpress/wordpress9.jpg" alt="" class="images_amazing" data-filter="word"
+                        hidden>
+                    <img src="./assets/images/wordpress/wordpress10.jpg" alt="" class="images_amazing"
+                        data-filter="word" hidden>
+
+                </div>
+                <div class="load_more_images">
+                    <img src="./assets/images/breakingnews/1.jpg" alt="" class="more_images" hidden>
+                    <img src="./assets/images/breakingnews/2.jpg" alt="" class="more_images" hidden>
+                    <img src="./assets/images/breakingnews/3.jpg" alt="" class="more_images" hidden>
+                    <img src="./assets/images/breakingnews/4.jpg" alt="" class="more_images" hidden>
+                    <img src="./assets/images/breakingnews/5.jpg" alt="" class="more_images" hidden>
+                    <img src="./assets/images/breakingnews/6.jpg" alt="" class="more_images" hidden>
+                    <img src="./assets/images/breakingnews/7.jpg" alt="" class="more_images" hidden>
+                    <img src="./assets/images/breakingnews/8.jpg" alt="" class="more_images" hidden>
+                    <img src="./assets/images/amazingwork/11.jpg" alt="" class="more_images" hidden>
+                    <img src="./assets/images/graphic design/graphic-design3.jpg" alt="" class="more_images" hidden>
+                    <img src="./assets/images/landing page/landing-page4.jpg" alt="" class="more_images" hidden>
+                    <img src="./assets/images/graphic design/graphic-design8.jpg" alt="" class="more_images" hidden>
+                </div>
+                <div class="our_amazing_button">
+                    <button class="load_more_btn"><i class="load_more_plus fa fa-plus"></i>load more</button>
+                </div>
+            </div>
+        </section>
+        <section class="breaking_news">
+            <div class="container">
+                <p class="breaking_news_title">breaking news</p>
+                <div class="dash up_dash"></div>
+                <div class="dash down_dash"></div>
+                <div class="breaking_blog_posts_cards">
+                    <div class="breaking_blog_posts">
+                        <a href="#"><img src="./assets/images/breakingnews/1.jpg" alt=""></a>
+                        <div class="blog_data">
+                            <p class="data_day">12</p>
+                            <p class="data_month">feb</p>
+                        </div>
+                        <div class="image_title">
+                            <a href="#" class="blog_post_link">amazing blog post</a>
+                            <div class="blog_comments">
+                                <p class="blog_comment_admin">By admin</p>
+                                <p>2 comments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="breaking_blog_posts">
+                        <a href="#"><img src="./assets/images/breakingnews/2.jpg" alt=""></a>
+                        <div class="blog_data">
+                            <p class="data_day">12</p>
+                            <p class="data_month">feb</p>
+                        </div>
+                        <div class="image_title">
+                            <a href="#" class="blog_post_link">amazing blog post</a>
+                            <div class="blog_comments">
+                                <p class="blog_comment_admin">By admin</p>
+                                <p>2 comments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="breaking_blog_posts">
+                        <a href="#"><img src="./assets/images/breakingnews/3.jpg" alt=""></a>
+                        <div class="blog_data">
+                            <p class="data_day">12</p>
+                            <p class="data_month">feb</p>
+                        </div>
+                        <div class="image_title">
+                            <a href="#" class="blog_post_link">amazing blog post</a>
+                            <div class="blog_comments">
+                                <p class="blog_comment_admin">By admin</p>
+                                <p>2 comments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="breaking_blog_posts">
+                        <a href="#"><img src="./assets/images/breakingnews/4.jpg" alt=""></a>
+                        <div class="blog_data">
+                            <p class="data_day">12</p>
+                            <p class="data_month">feb</p>
+                        </div>
+                        <div class="image_title">
+                            <a href="#" class="blog_post_link">amazing blog post</a>
+                            <div class="blog_comments">
+                                <p class="blog_comment_admin">By admin</p>
+                                <p>2 comments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="breaking_blog_posts">
+                        <a href="#"><img src="./assets/images/breakingnews/5.jpg" alt=""></a>
+                        <div class="blog_data">
+                            <p class="data_day">12</p>
+                            <p class="data_month">feb</p>
+                        </div>
+                        <div class="image_title">
+                            <a href="#" class="blog_post_link">amazing blog post</a>
+                            <div class="blog_comments">
+                                <p class="blog_comment_admin">By admin</p>
+                                <p>2 comments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="breaking_blog_posts">
+                        <a href="#"><img src="./assets/images/breakingnews/6.jpg" alt=""></a>
+                        <div class="blog_data">
+                            <p class="data_day">12</p>
+                            <p class="data_month">feb</p>
+                        </div>
+                        <div class="image_title">
+                            <a href="#" class="blog_post_link">amazing blog post</a>
+                            <div class="blog_comments">
+                                <p class="blog_comment_admin">By admin</p>
+                                <p>2 comments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="breaking_blog_posts">
+                        <a href="#"><img src="./assets/images/breakingnews/7.jpg" alt=""></a>
+                        <div class="blog_data">
+                            <p class="data_day">12</p>
+                            <p class="data_month">feb</p>
+                        </div>
+                        <div class="image_title">
+                            <a href="#" class="blog_post_link">amazing blog post</a>
+                            <div class="blog_comments">
+                                <p class="blog_comment_admin">By admin</p>
+                                <p>2 comments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="breaking_blog_posts">
+                        <a href="#"><img src="./assets/images/breakingnews/8.jpg" alt=""></a>
+                        <div class="blog_data">
+                            <p class="data_day">12</p>
+                            <p class="data_month">feb</p>
+                        </div>
+                        <div class="image_title">
+                            <a href="#" class="blog_post_link">amazing blog post</a>
+                            <div class="blog_comments">
+                                <p class="blog_comment_admin">By admin</p>
+                                <p>2 comments</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="people">
+            <div class="container">
+                <p class="people_title">what people say about&nbsp<span class="people_title_ham">theHam</span></p>
+                <div class="dash up_dash"></div>
+                <div class="dash down_dash"></div>
+                <div class="reverse_coma">
+                    <img src="./assets/images/reversecoma.png" alt="">
+                </div>
+                <p class="people_comment" data-filter="Anna" hidden>Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Alias, ex! Ullam officiis laboriosam doloremque. Animi saepe voluptatem, quo nesciunt, quam
+                    earum corporis rerum asperiores veritatis eius dolorem ex. Incidunt, ab!</p>
+                <p class="people_comment" data-filter="Carl" hidden>Integer dignissim, augue tempus ultricies luctus,
+                    quam dui laoreet sem, non
+                    dictum odio nisi quis massa. Morbi pulvinar
+                    odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi
+                    quis massa.
+                    pulvinar odio eget aliquam facilisis.</p>
+                <p class="people_comment" data-filter="Hasan"> Morbi pulvinar
+                    odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi
+                    Animi saepe voluptatem, quo nesciunt, quam
+                    earum corporis rerum asperiores veritatis eius dolorem ex. Incidunt, ab!</p>
+                <p class="people_comment" data-filter="Susan" hidden>Animi saepe voluptatem, quo nesciunt, quam
+                    earum corporis rerum asperiores veritatis eius dolorem ex.
+                    odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi
+                    quis massa. Morbi
+                    pulvinar odio eget aliquam facilisis.</p>
+                <div class="people_name_job">
+                    <p class="name name_job" data-filter="Anna" hidden>Anna Johnson</p>
+                    <p class="name name_job" data-filter="Carl" hidden>Carl Peterman</p>
+                    <p class="name name_job" data-filter="Hasan">Hasan Ali</p>
+                    <p class="name name_job" data-filter="Susan" hidden>Susan Jackson</p>
+                    <p class="job name_job" data-filter="Anna" hidden>Web Developer</p>
+                    <p class="job name_job" data-filter="Carl" hidden>IT Project Manager</p>
+                    <p class="job name_job" data-filter="Hasan">UX designer</p>
+                    <p class="job name_job" data-filter="Susan" hidden>AI Engineer</p>
+                </div>
+                <div class="people_image">
+                    <img src="./assets/images/people/1.jpg" class="main_image" data-filter="Anna" alt="" hidden>
+                    <img src="./assets/images/people/2.jpg" class="main_image" data-filter="Carl" alt="" hidden>
+                    <img src="./assets/images/people/3.jpg" class="main_image" data-filter="Hasan" alt="">
+                    <img src="./assets/images/people/4.jpg" class="main_image" data-filter="Susan" alt="" hidden>
+                </div>
+                <div class="people_image_carousel">
+                    <div class="arrow_border left">
+                        <img src="./assets/images/people/arrowleft.svg" class="people_arrow_left arrow" alt="">
+                    </div>
+                    <div class="carousel_image_block">
+                        <img src="./assets/images/people/1.jpg" class="carousel_image" id="Anna" alt="">
+                        <img src="./assets/images/people/2.jpg" class="carousel_image" id="Carl" alt="">
+                        <img src="./assets/images/people/3.jpg" class="carousel_image translated_image" id="Hasan"
+                            alt="">
+                        <img src="./assets/images/people/4.jpg" class="carousel_image" id="Susan" alt="">
+                    </div>
+
+                    <div class="arrow_border">
+                        <img src="./assets/images/people/arrowleft.svg" class="people_arrow_right arrow" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
